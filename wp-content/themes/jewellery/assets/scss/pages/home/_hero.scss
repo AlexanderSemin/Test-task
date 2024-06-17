@@ -1,0 +1,50 @@
+.hero{
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $black;
+
+  @include breakpoint(lg){
+    min-height: 600px;
+  }
+
+  @include breakpoint(md){
+    min-height: auto;
+    background-image: none!important;
+  }
+
+  &__inner{
+    margin-left:100px;
+    padding: 50px 0;
+
+    @include breakpoint(xl){
+      margin-left:0;
+    }
+  }
+
+  h1{
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle{
+    color: $white;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  &__description{
+    max-width: 470px;
+    margin-bottom: 35px;
+  }
+
+  &__buttons{
+    display: flex;
+    gap: 1rem;
+  }
+}

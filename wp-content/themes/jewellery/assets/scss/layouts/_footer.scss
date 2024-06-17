@@ -1,0 +1,177 @@
+.footer{
+  margin-top: auto;
+  background-color: $footer_bg_color;
+  padding: 70px 0 65px;
+
+  @include breakpoint(sm){
+    padding: 40px 0;
+  }
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+
+    @include breakpoint(lg){
+      flex-wrap: wrap;
+      gap: 50px 0;
+    }
+  }
+
+  &__col{
+    padding: 0 15px;
+
+    @include breakpoint(lg){
+      width: 50%;
+    }
+  }
+
+  &__caption{
+
+    @include breakpoint(sm){
+      width: 100%;
+    }
+  }
+
+  &__posts{
+
+    @include breakpoint(sm){
+      width: 100%;
+    }
+  }
+
+  &__logo{
+    display: block;
+    margin-bottom: 15px;
+    width: 109px;
+    height: 40px;
+
+    a{
+      display: block;
+    }
+
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__description{
+    max-width: 269px;
+    line-height: 1.43;
+    margin-bottom: 30px;
+
+    @include breakpoint(sm){
+      max-width: 100%;
+    }
+  }
+
+  &__title{
+    margin-bottom: 20px;
+  }
+
+  &__contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    a{
+      display: block;
+    }
+  }
+
+  &-nav{
+
+    li{
+      margin-bottom: 10px;
+
+      a{
+        line-height: 1.43;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .wp-block-latest-posts{
+    max-width: 314px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include breakpoint(xl){
+      max-width: 270px;
+    }
+
+    @include breakpoint(sm){
+      max-width: 100%;
+    }
+
+    li{
+      display: grid;
+      grid-template-areas: 'post-image post-title' 'post-image post-date';
+      grid-template-columns: 65px 1fr;
+      gap: 11px 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $border_color;
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
+
+    &__featured-image{
+      grid-area: post-image;
+    }
+
+    &__post-title{
+      font-family: "Marcellus", serif;
+      font-weight: normal;
+      color:$black;
+      font-size: 14px;
+      line-height: 1.43;
+      text-transform: uppercase;
+      transition: .5s all ease;
+
+      &:hover{
+        color:$accent_color;
+      }
+    }
+
+    &__post-date{
+      grid-area: post-date;
+    }
+  }
+
+}
+
+.fax_icon, .phone_icon, .location_icon{
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.43;
+
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.fax_icon:before{
+  background: url("../../dist/images/envelop.svg")no-repeat;
+  background-size: 100% 100%;
+}
+
+.phone_icon:before{
+  background: url("../../dist/images/phone.svg")no-repeat;
+  background-size: 100% 100%;
+}
+
+.location_icon:before{
+  background: url("../../dist/images/gps.svg")no-repeat;
+  background-size: 100% 100%;
+}

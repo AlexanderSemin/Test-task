@@ -1,0 +1,64 @@
+h1,
+.h1 {
+  font-family: "Marcellus", serif;
+  font-weight: normal;
+  color:$black;
+  font-size: 3.375rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-family: "Marcellus", serif;
+  font-weight: normal;
+  color:$black;
+  font-size: 1.5rem;
+  line-height: 1.46;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-family: "Marcellus", serif;
+  font-weight: normal;
+  color:$black;
+  font-size: 1.125rem;
+  line-height: 1.39;
+  text-transform: uppercase;
+}
+
+h4,
+.h4 {
+  font-family: "Marcellus", serif;
+  font-weight: normal;
+  color:$black;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  text-transform: uppercase;
+}
+
+h5,
+.h5 {
+  font-family: "Marcellus", serif;
+  font-weight: normal;
+  color:$text_color_dark;
+  font-size: 0.875rem;
+  line-height: 1.14;
+}
+
+a.h5{
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.subtitle{
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.14;
+  color: $accent_color;
+}
+

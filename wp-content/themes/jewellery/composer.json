@@ -1,0 +1,32 @@
+{
+    "name": "automattic/jewellery",
+    "type": "wordpress-theme",
+    "description": "",
+    "keywords": [
+        "WordPress",
+        "Themes"
+    ],
+    "homepage": "https://localhost",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/Automattic/_s/graphs/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "phpmailer/phpmailer": "^6.6"
+    },
+    "require-dev": {
+        "wp-cli/i18n-command": "^2.2.5"
+    },
+    "scripts": {
+        "make-pot": "wp i18n make-pot . languages/jewellery.pot"
+    },
+    "support": {
+        "issues": "https://github.com/Automattic/aquaclean/issues",
+        "source": "https://github.com/Automattic/aquaclean"
+    },
+    "minimum-stability": "dev"
+}

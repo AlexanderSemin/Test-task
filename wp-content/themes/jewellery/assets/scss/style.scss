@@ -1,0 +1,20 @@
+@import "./utils/variable";
+@import './utils/mixin';
+
+@import "./base/reset";
+@import './base/base';
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/section-title";
+@import "./components/product-card";
+@import "./components/post-card";
+@import "./components/products_list";
+@import "./components/main_preloader";
+
+@import './layouts/header';
+@import './layouts/footer';
+
+@import "./pages/home/home";
+
+@import "./vendors/swiper_slider";

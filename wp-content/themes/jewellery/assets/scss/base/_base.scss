@@ -1,0 +1,61 @@
+body {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: .875rem;
+  color: $text_color;
+  background-color: $bg_color;
+}
+
+a {
+  text-decoration: none;
+  color: $text_color;
+}
+
+p {
+  line-height: 1.79;
+}
+
+.container {
+  width: 100%;
+  max-width:1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include breakpoint(xl){
+    max-width: 992px;
+  }
+
+  @include breakpoint(lg){
+    max-width: 768px;
+  }
+}
+
+.main_wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.white_color {
+  color: $white;
+}
+
+.section{
+  margin-bottom: 100px;
+
+  @include breakpoint(md){
+    margin-bottom: 50px;
+  }
+}
+
+.price{
+  font-weight: bold;
+  color:$accent_color;
+  line-height: 1.14;
+}

@@ -1,0 +1,104 @@
+.post-card{
+  width: 100%;
+  max-width: 345px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__image{
+    position: relative;
+
+    img{
+      display: block;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__date{
+    width: 46px;
+    padding: 5px 10px;
+    background-color:$white;
+    text-align: center;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #242424;
+    line-height: 1.15;
+
+    &_day{
+      line-height: 1.04;
+      font-size: 24px;
+    }
+  }
+
+
+  &__category{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 160px;
+    min-height: 25px;
+    margin: -12px auto 13px;
+    background-color: $accent_color;
+    color:$white;
+    font-size: .75rem;
+    text-transform: uppercase;
+    position: relative;
+
+    &:hover{
+      background-color: $accent_hover;
+    }
+  }
+
+  &__title{
+    margin-bottom: 10px;
+    transition: .3s all ease-in-out;
+    display: block;
+
+    &:hover{
+      color: $accent_color;
+    }
+  }
+
+  &__posted_by{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    margin-bottom: 10px;
+
+    &-text{
+      color: rgba(119, 119, 119, 0.5);
+      line-height: 1.43;
+    }
+
+    &-avatar{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: block;
+    }
+  }
+
+  &__expert{
+    margin-bottom: 20px;
+    line-height: 1.79;
+  }
+
+  &__permalink{
+    font-weight: 500;
+    line-height: 1.79;
+    text-align: center;
+    color: $accent_color;
+    text-transform: uppercase;
+    transition: .3s all ease;
+
+    &:hover{
+      color: $accent_hover;
+    }
+  }
+}

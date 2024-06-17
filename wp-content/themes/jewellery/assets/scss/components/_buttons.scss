@@ -1,0 +1,43 @@
+.button_white, .button_black, .button_outline{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  flex-grow: 0;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.79;
+  text-align: center;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: .3s all ease;
+}
+
+.button_white{
+  background-color: $white;
+  color: $black;
+
+  &:hover{
+    background-color: $button_bg;
+    color: $white;
+  }
+}
+
+.button_black{
+  color: $white;
+  background-color: $text_color;
+
+  &:hover{
+    background-color: $black;
+  }
+}
+
+.button_outline{
+  border: solid 1px $white;
+  color: $white;
+  background-color: $black;
+
+  &:hover{
+    background-color: $button_bg;
+  }
+}

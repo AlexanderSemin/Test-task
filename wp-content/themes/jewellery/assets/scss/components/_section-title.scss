@@ -1,0 +1,11 @@
+.section-title{
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include breakpoint(md){
+    margin-bottom: 30px;
+  }
+}
